@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/**************************** main-menu ****************************/
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px 10%;
+    background-color: #f38e59;
+    position: fixed;
+}
+
+li,a,button,div{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size:16px ;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #0088a9;
+}
+.cta{
+    display: flex;
+}
+button{
+    padding: 9px 25px;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+   
+}
+#btn1 button{  
+    border: 3px solid rgb(2, 32, 47);; 
+    background-color:rgb(2, 32, 47);
+    font-variant-caps: all-petite-caps;
+}
+#btn1 button:hover{
+    background-color:rgb(10, 17, 114);
+}
+#btn2 button{
+    font-variant-caps: all-petite-caps;
+    background-color: #f38e59;
+    border: 3px solid #fbfcfb; 
+    margin-left: 10px;
+}
+#btn2 button:hover{
+    background-color:rgba(255, 255, 255, 0.548);
+}
+
+
+
+/**************************** header-section ****************************/
+
+.header nav{
+
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f38e59;
+    
+}
+.header nav h1{ 
+    font-variant-caps: all-petite-caps;
+    margin-top: 150px;
+    font-size: 5em;
+    font-weight: 500;
+    font-family:"proxima-nova", sans-serif;
+}
+
+.header nav p{
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.678);
+    text-align:center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-top: 1em;
+}
+
+
+
+/**************************** main-content-visible ****************************/
+
+main{
+   
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/********** main_left **********/
+
+.main_left{
+    width: 50%;
+}
+.left{
+    padding-left: 100px;
+    padding-right: 50px;
+    margin: auto;
+}
+.left form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+#BTN{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+input[type=text], textarea {
+    padding: 12px 20px;
+    margin: 10px 0;
+    display:flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font: 300 1em/1.35rem "proxima-nova", sans-serif;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+}
+textarea::-webkit-scrollbar{
+    width: 12px;
+    line-height: 2.3;
+    
+}
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #717479; 
+    
+}
+
+input[type=submit] {
+    justify-self: flex-end;
+    width: 150px;
+    height: 50px;
+    background-color: #f39b6b;
+    border-style: none;
+    margin-top: 30px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.btn input[type=submit]{
+    align-self: flex-end;
+}
+  
+input[type=submit]:hover {
+    background-color: #d16e39;
+}
+
+
+/********** main_left & main_right **********/
+
+.left h1, .right h1{
+    color: #5BB5DE;
+    font-family: 'proxima-nova', sans-serif;
+    font-variant-caps: all-petite-caps;
+    font-weight: 600 ;
+    font-size: 1.9em;
+}
+.left p, .right p{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: #767676;
+    margin: 1em 0;
+    line-height: 140%;
+    
+}
+
+
+/********** main_right **********/
+
+.main_right{
+    width: 50%;
+}
+.right{
+    padding-left: 50px;
+    padding-right: 100px;
+}
+.main_right i{
+    color: #f39b6b;
+    font-size: 80px;
+}
+.main_right a{
+    font-size: 1em;
+
+}
+.help_center, .link{
+    text-decoration: none;
+    color: #F49B6C;
+}
+
+/***** social media platforms *****/
+
+.social{
+    margin-top: 70px;
+}
+
+.social p{
+    line-height: 140%;
+    font-size: 1.2em;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+.social a{
+    font-size: 1em;
+
+}
+.social h3{
+    font-weight: 400;
+    font-size: 1.75em;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.main_right i{
+    margin-top: 5px;
+    color: #F49B6C;
+    font-size: 80px;
+    
+}
+.social div{
+    margin-bottom: 30px;
+}
+
+#twitter_icon, #linkedin_icon,#facebook_icon{
+    float: left;
+    border-radius: 50%;
+    color: white;
+    background-color: #f39b6b;
+    padding: 15px;
+    font-size: 35px;
+    
+}
+
+
+/**************************** main-footer ****************************/
+
+footer{ 
+    background-color: #404040;    
+}
+
+
+/***** footer list *****/
+
+.footer_top{
+    display: flex;
+    justify-content: center;
+    padding: 2.5em 0;
+    
+}
+.footer_top li{
+    
+    line-height: 1.6rem;
+}
+.footer_top li a:hover{
+    
+    color: #F49B6C;
+}
+footer ul{
+    list-style: none;  
+    font-size: 20px;
+    margin-left: 3%;
+}
+.list_title{
+    color: white;
+    font-weight: 400;
+}
+.list_icons i{
+    color: #f39b6b;
+    margin: 5px;
+    font-size: 20px;
+}
+.footer_btn{
+    width: 180px;
+    font-size: 0.8em;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(2 32 47);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.9375rem 2rem;
+}
+.footer_btn:hover{
+    background-color: #272525b4;
+}
+
+
+.afoter{
+    text-decoration: none;
+    color: #c2bdbdbd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/***** footer copyright *****/
+
+.footer-copyright{
+    background-color: #333333;
+    line-height: 2.5em;
+
+}
+.wrapper{
+    max-width: 76.25em;
+        width: 100%;
+}
+.wrapper p{
+    color: #909090;
+    margin-left:10PX ;
+}
+.wrapper a{
+    text-decoration: none;
+    color: #F49B6C;
+}
+
+
